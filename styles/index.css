@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    min-height: 100vh;
+    min-width: 50vh;
+    background-color: white;
+    background-attachment: fixed;
+}
+
+.header-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(5, 188, 255), rgb(7, 152, 204));
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    list-style-type: none;
+    padding: 20px 20px;
+}
+
+.header-nav--link {
+    text-align: center;
+}
+
+.header-nav--link a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-nav--link:hover {
+    transform: scale(1.3);
+}
+
+.header-container--logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: start;
+    align-items: center;
+    grid-gap: 20px;
+    margin: 0 20px;
+}
+
+.header-container--logo-text {
+    color: white;
+}
+
+
+/* Оформление основного блока */
+
+.main-container {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: start;
+    margin: 5% 5%;
+}
+
+.main-container--text {
+    color: black;
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main-container--text span {
+    color: rgb(5, 188, 255);
+}
+
+.main-container--button {
+    display: inline-block;
+    background-color: rgb(5, 188, 255);
+    padding: 20px 50px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main-container--button a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-container--button:hover {
+    box-shadow: 0 0 20px rgb(5, 188, 255);
+}
+
+.main-container--quote {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(222, 248, 250);
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(57, 53, 53);
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main-container--quote img {
+    border-radius: 50%;
+    width: 80%;
+    height: auto;
+}
+
+.quote-author {
+    display: grid;
+    text-align: center;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.quote-author-name {
+    color: rgb(57, 53, 53);
+    font-size: x-large;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* Оформление footer блока */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(5, 188, 255), rgb(7, 152, 204));
+    padding: 10px 30px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-text-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.footer-text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    min-height: 100vh;
+    min-width: 50vh;
+    background-color: white;
+    background-attachment: fixed;
+}
+
+.header-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(5, 188, 255), rgb(7, 152, 204));
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    list-style-type: none;
+    padding: 20px 20px;
+}
+
+.header-nav--link {
+    text-align: center;
+}
+
+.header-nav--link a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-nav--link:hover {
+    transform: scale(1.3);
+}
+
+.header-container--logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: start;
+    align-items: center;
+    grid-gap: 20px;
+    margin: 0 20px;
+}
+
+.header-container--logo-text {
+    color: white;
+}
+
+
+/* Оформление основного блока */
+
+.main-container {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
+    margin: 5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(222, 248, 250);
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    justify-self: center;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.product-about {
+    font-size: smaller;
+    padding-bottom: 10px;
+}
+
+.product-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.product-photo img {
+    width: 50%;
+    height: auto;
+}
+
+.product-price {
+    padding-bottom: 10px;
+}
+
+.product-button {
+    display: inline-block;
+    background-color: rgb(5, 188, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
+    width: 150px;
+}
+
+.product-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-button a:hover {
+    box-shadow: 0 0 20px rgb(5, 188, 255);
+}
+
+
+/* Оформление footer блока */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(5, 188, 255), rgb(7, 152, 204));
+    padding: 10px 30px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-text-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.footer-text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}

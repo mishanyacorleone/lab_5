@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    min-height: 100vh;
+    min-width: 50vh;
+    background-color: white;
+    background-attachment: fixed;
+}
+
+.header-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(5, 188, 255), rgb(7, 152, 204));
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    list-style-type: none;
+    padding: 20px 20px;
+}
+
+.header-nav--link {
+    text-align: center;
+}
+
+.header-nav--link a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-nav--link:hover {
+    transform: scale(1.3);
+}
+
+.header-container--logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: start;
+    align-items: center;
+    grid-gap: 20px;
+    margin: 0 20px;
+}
+
+.header-container--logo-text {
+    color: white;
+}
+
+
+/* Оформление основного блока */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(193, 191, 191);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Nunito', sans-serif;
+}
+
+input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+/* Оформление footer блока */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(5, 188, 255), rgb(7, 152, 204));
+    padding: 10px 30px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-text-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.footer-text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
